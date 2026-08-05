@@ -1,0 +1,386 @@
+<!-- e7ec206d73d77c4e -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outlet dos Quadros | Quadros personalizados e obras de arte | Outletquadros</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --wall:#FAFAF8;
+    --wall-deep:#F1EFEA;
+    --card:#FFFFFF;
+    --ink:#1E1B18;
+    --muted:#736E66;
+    --line:#E4E0D8;
+    --wine:#8A3549;
+    --wine-soft:#A9556A;
+    --brass:#B08A3E;
+    --maxw:1160px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--wall);color:var(--ink);font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .xdq5_wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:600;line-height:1.12;letter-spacing:-0.01em}
+  a{color:inherit}
+  .xdq5_eyebrow{font-size:11.5px;letter-spacing:0.24em;text-transform:uppercase;color:var(--wine);font-weight:600}
+
+  header.xdq5_top{border-bottom:1px solid var(--line);background:rgba(250,250,248,.9);backdrop-filter:blur(8px);position:sticky;top:0;z-index:50}
+  .xdq5_top-in{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 28px;max-width:var(--maxw);margin:0 auto}
+  .xdq5_brand{display:flex;align-items:center;gap:11px;text-decoration:none}
+  .xdq5_brand .mk{width:32px;height:32px;flex:none}
+  .xdq5_brand b{font-family:"Playfair Display",serif;font-size:19px;font-weight:700;line-height:1}
+  .xdq5_brand small{display:block;font-size:9px;letter-spacing:0.24em;text-transform:uppercase;color:var(--muted);margin-top:4px;font-weight:500;font-family:"Inter",sans-serif}
+  nav.xdq5_menu{display:flex;gap:30px}
+  nav.xdq5_menu a{font-size:14px;text-decoration:none;color:var(--muted);padding-bottom:2px;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+  nav.xdq5_menu a:hover,nav.xdq5_menu a:focus-visible{color:var(--ink);border-color:var(--wine)}
+  @media(max-width:820px){nav.xdq5_menu{display:none}}
+
+  .xdq5_hero{padding:96px 0 84px}
+  .xdq5_hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+  .xdq5_hero h1{font-size:clamp(40px,5.6vw,66px);margin:22px 0 24px;max-width:15ch;font-weight:600}
+  .xdq5_hero p.xdq5_lead{font-size:19px;color:var(--muted);max-width:47ch;font-weight:300}
+  .xdq5_cta{display:inline-flex;align-items:center;gap:9px;margin-top:32px;background:var(--wine);color:#fff;text-decoration:none;font-weight:600;font-size:14.5px;padding:14px 28px;border-radius:2px;transition:background .2s}
+  .xdq5_cta:hover{background:var(--wine-soft)}
+  .xdq5_cta:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+  .xdq5_meta-row{display:flex;flex-wrap:wrap;gap:34px;margin-top:42px}
+  .xdq5_meta-row strong{display:block;font-family:"Playfair Display",serif;font-size:26px;font-weight:600}
+  .xdq5_meta-row span{font-size:11px;letter-spacing:0.13em;text-transform:uppercase;color:var(--muted)}
+
+  /* parede de quadros (gallery wall) em SVG */
+  .xdq5_gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;align-items:center}
+  .xdq5_frame{background:#fff;border:1px solid var(--line);padding:8px;box-shadow:0 1px 0 rgba(0,0,0,.03)}
+  .xdq5_frame .xdq5_mat{border:6px solid #fff;outline:1px solid var(--line);aspect-ratio:3/4;overflow:hidden;background:var(--wall-deep)}
+  .xdq5_frame.xdq5_wide .xdq5_mat{aspect-ratio:1/1}
+  .xdq5_frame svg{display:block;width:100%;height:100%}
+  .g1{transform:translateY(-14px)} .g3{transform:translateY(-14px)} .g5{transform:translateY(10px)}
+  @media(max-width:860px){
+    .xdq5_hero{padding:60px 0 52px}
+    .xdq5_hero-grid{grid-template-columns:1fr;gap:40px}
+    .g1,.g3,.g5{transform:none}
+  }
+
+  section{padding:82px 0;border-top:1px solid var(--line)}
+  .xdq5_sec-head{max-width:62ch;margin-bottom:46px}
+  .xdq5_sec-head h2{font-size:clamp(30px,3.8vw,44px);margin:14px 0 16px}
+  .xdq5_sec-head p{color:var(--muted);font-weight:300}
+
+  .xdq5_two-col{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+  .xdq5_two-col p+p{margin-top:16px}
+  @media(max-width:860px){.xdq5_two-col{grid-template-columns:1fr;gap:28px}}
+
+  .xdq5_cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .xdq5_card{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:32px 28px 34px;transition:transform .2s,border-color .2s}
+  .xdq5_card:hover{transform:translateY(-3px);border-color:var(--wine-soft)}
+  .xdq5_card .xdq5_ico{width:44px;height:44px;color:var(--wine);margin-bottom:18px}
+  .xdq5_card h3{font-size:21px;margin-bottom:10px}
+  .xdq5_card p{font-size:15px;color:var(--muted);font-weight:300}
+  @media(max-width:860px){.xdq5_cards{grid-template-columns:1fr}}
+
+  .xdq5_band{background:var(--ink);color:#F3EFE8;border:0}
+  .xdq5_band .xdq5_sec-head h2{color:#fff}
+  .xdq5_band .xdq5_sec-head p{color:#B8B0A4}
+  ol.xdq5_flow{list-style:none;counter-reset:step;display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  ol.xdq5_flow li{counter-increment:step;padding-top:22px;border-top:1px solid #3A352E}
+  ol.xdq5_flow li::before{content:"0" counter(step);font-family:"Playfair Display",serif;font-size:22px;color:var(--brass);display:block;margin-bottom:10px;font-weight:600}
+  ol.xdq5_flow h3{font-size:20px;margin-bottom:8px;color:#fff}
+  ol.xdq5_flow p{font-size:15px;color:#B8B0A4;font-weight:300}
+  @media(max-width:860px){ol.xdq5_flow{grid-template-columns:1fr}}
+
+  .xdq5_quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  blockquote{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:30px 28px}
+  blockquote p{font-family:"Playfair Display",serif;font-size:20px;line-height:1.42;font-style:italic}
+  blockquote footer{margin-top:18px;font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);font-style:normal}
+  @media(max-width:860px){.xdq5_quotes{grid-template-columns:1fr}}
+
+  .xdq5_contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+  @media(max-width:860px){.xdq5_contact-grid{grid-template-columns:1fr;gap:36px}}
+  dl.xdq5_info dt{font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--wine);margin-top:22px;font-weight:600}
+  dl.xdq5_info dt:first-child{margin-top:0}
+  dl.xdq5_info dd{font-size:16.5px;margin-top:5px}
+  dl.xdq5_info dd a{text-decoration:none;border-bottom:1px solid var(--line)}
+  dl.xdq5_info dd a:hover{border-color:var(--wine)}
+
+  form{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:32px}
+  .xdq5_field{margin-bottom:18px}
+  label{display:block;font-size:11.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:7px;font-weight:600}
+  input,textarea{width:100%;font-family:inherit;font-size:16px;color:var(--ink);background:var(--wall);border:1px solid var(--line);border-radius:2px;padding:12px 14px}
+  input:focus,textarea:focus{outline:2px solid var(--wine);outline-offset:1px;border-color:transparent}
+  textarea{min-height:120px;resize:vertical}
+  button{font-family:inherit;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;font-weight:600;background:var(--ink);color:var(--wall);border:0;border-radius:2px;padding:15px 32px;cursor:pointer;transition:background .2s}
+  button:hover{background:var(--wine)}
+  button:focus-visible{outline:2px solid var(--wine);outline-offset:3px}
+  .xdq5_form-note{font-size:13px;color:var(--muted);margin-top:14px;font-weight:300}
+
+  footer.xdq5_site{border-top:1px solid var(--line);background:var(--wall-deep);padding:56px 0 40px}
+  .xdq5_foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:44px}
+  @media(max-width:860px){.xdq5_foot-grid{grid-template-columns:1fr;gap:32px}}
+  .xdq5_foot-grid h4{font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;font-weight:600}
+  .xdq5_foot-grid p,.xdq5_foot-grid li{font-size:14.5px;color:#5A544B;font-weight:300}
+  .xdq5_foot-grid ul{list-style:none}
+  .xdq5_foot-grid ul li{margin-bottom:8px}
+  .xdq5_foot-grid a{text-decoration:none;border-bottom:1px solid transparent}
+  .xdq5_foot-grid a:hover{border-color:var(--wine)}
+  .xdq5_legal{border-top:1px solid var(--line);margin-top:40px;padding-top:22px;font-size:13px;color:var(--muted);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+
+  @media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important}html{scroll-behavior:auto}}
+</style>
+
+<link rel="canonical" href="https://outletquadros.online/">
+<meta name="description" content="Visite outletquadros.online e acesse conteúdo original. Informações detalhadas e atualizadas sobre este assunto.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://outletquadros.online/">
+<meta property="og:site_name" content="outletquadros.online">
+<meta property="og:description" content="Visite outletquadros.online e acesse conteúdo original. Informações detalhadas e atualizadas sobre este assunto.">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="outletquadros.online">
+<meta name="generator" content="cms-6f3b17c1dd61">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Outletquadros","url":"https://outletquadros.online/","datePublished":"2025-08-27","dateModified":"2026-05-26","inLanguage":"pt-BR","isPartOf":{"@type":"WebSite","name":"Outletquadros","url":"https://outletquadros.online/"},"publisher":{"@type":"Organization","name":"Outletquadros","url":"https://outletquadros.online/"}}</script>
+
+<style>:root{--pknp-p:rgb(52,22,18);--pknp-s:rgb(185,170,190);--pknp-id:'32089cb13197'}@keyframes szrqxzeh{from{opacity:1}to{opacity:1}}.anfvxm{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}</style>
+<!-- b:jet9vc3n4x v2.36.402 -->
+</head>
+<body data-s="6cb0d7b4" data-p="qtklr7">
+<noscript><div style="padding:20px;text-align:center;"><p>Para uma melhor experiência em outletquadros, ative o JavaScript no seu navegador.</p></div></noscript>
+
+<header class="xdq5_top">
+  <div class="xdq5_top-in">
+    <a class="xdq5_brand" href="index.html">
+      <svg class="mk" viewBox="0 0 32 32" fill="none"><rect x="2" y="2" width="28" height="28" rx="2" stroke="#8A3549" stroke-width="2"/><rect x="8" y="8" width="16" height="16" stroke="#1E1B18" stroke-width="1.5"/><path d="M8 20l5-6 4 4 3-3 4 5" stroke="#B08A3E" stroke-width="1.5" fill="none"/></svg>
+      <span><b>Outlet dos Quadros</b><small>Quadros &amp; obras de arte</small></span>
+    </a>
+    <nav class="xdq5_menu">
+      <a href="#sobre">Sobre</a>
+      <a href="#linhas">Linhas</a>
+      <a href="#como">Personalização</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="xdq5_hero" style="border-top:0">
+  <div class="xdq5_wrap xdq5_hero-grid">
+    <div>
+      <p class="xdq5_eyebrow">O braço digital do Grupo AP</p>
+      <h1>Quadros e obras de arte, direto de quem fabrica.</h1>
+      <p class="xdq5_lead">A Outlet dos Quadros nasce da experiência de mais de 35 anos do Grupo AP em quadros personalizados e obras de arte. Fabricação própria, curadoria ampla e preço de outlet — agora online.</p>
+      <a class="xdq5_cta" href="#contato">Fale conosco
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <div class="xdq5_meta-row">
+        <div><strong>35+ anos</strong><span>Experiência do grupo</span></div>
+        <div><strong>Fábrica própria</strong><span>Do quadro à moldura</span></div>
+        <div><strong>São Paulo</strong><span>Base de operação</span></div>
+      </div>
+    </div>
+    <div class="xdq5_gallery" aria-hidden="true">
+      <div class="xdq5_frame g1">
+        <div class="xdq5_mat"><svg viewBox="0 0 90 120" preserveAspectRatio="none"><rect width="90" height="120" fill="#EDE6DA"/><rect y="78" width="90" height="42" fill="#9FB0A0"/><path d="M0 78 L26 54 L44 72 L64 46 L90 74 V120 H0 Z" fill="#6E7F72"/><circle cx="70" cy="28" r="10" fill="#D9A441"/></svg></div>
+      </div>
+      <div class="xdq5_frame g2 xdq5_wide">
+        <div class="xdq5_mat"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><rect width="100" height="100" fill="#F2ECE1"/><circle cx="50" cy="50" r="30" fill="none" stroke="#8A3549" stroke-width="6"/><path d="M28 66 Q50 40 72 66" stroke="#1E1B18" stroke-width="4" fill="none"/></svg></div>
+      </div>
+      <div class="xdq5_frame g3">
+        <div class="xdq5_mat"><svg viewBox="0 0 90 120" preserveAspectRatio="none"><rect width="90" height="120" fill="#1E1B18"/><rect x="16" y="20" width="58" height="80" fill="none" stroke="#B08A3E" stroke-width="3"/><circle cx="45" cy="48" r="16" fill="#B08A3E" opacity=".8"/><rect x="30" y="72" width="30" height="20" fill="#A9556A"/></svg></div>
+      </div>
+      <div class="xdq5_frame g4 xdq5_wide">
+        <div class="xdq5_mat"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><rect width="100" height="100" fill="#E7EDEA"/><rect x="14" y="14" width="34" height="72" fill="#8A3549"/><rect x="54" y="30" width="32" height="56" fill="#D9A441"/></svg></div>
+      </div>
+      <div class="xdq5_frame g5">
+        <div class="xdq5_mat"><svg viewBox="0 0 90 120" preserveAspectRatio="none"><rect width="90" height="120" fill="#F2ECE1"/><path d="M45 18 C22 40 22 74 45 100 C68 74 68 40 45 18Z" fill="#6E7F72"/><line x1="45" y1="18" x2="45" y2="100" stroke="#EDE6DA" stroke-width="2"/></svg></div>
+      </div>
+      <div class="xdq5_frame g6">
+        <div class="xdq5_mat"><svg viewBox="0 0 90 120" preserveAspectRatio="none"><rect width="90" height="120" fill="#EDE6DA"/><rect x="0" y="0" width="90" height="40" fill="#A9556A"/><rect x="0" y="40" width="90" height="40" fill="#D9A441"/><rect x="0" y="80" width="90" height="40" fill="#6E7F72"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="xdq5_wrap">
+    <div class="xdq5_sec-head">
+      <p class="xdq5_eyebrow">Sobre a Outlet dos Quadros</p>
+      <h2>A tradição de uma fábrica, na velocidade do digital</h2>
+    </div>
+    <div class="xdq5_two-col">
+      <div>
+        <p>A Outlet dos Quadros é a operação digital do Grupo AP, referência na fabricação de quadros com mais de 35 anos de mercado. Esta frente online, sob a razão social Arte Integrada Comércio de Arte Ltda, foi estruturada em 2015 para levar esse mesmo padrão de qualidade a todo o Brasil, com a agilidade da internet.</p>
+        <p>Por vir de uma fábrica, controlamos cada etapa: a impressão, a tela, a moldura e o acabamento. Isso permite preço de outlet sem abrir mão do padrão de galeria.</p>
+      </div>
+      <div>
+        <p>Nosso catálogo reúne quadros decorativos, obras de arte, reproduções em tela e peças personalizadas a partir da sua própria imagem ou projeto.</p>
+        <p>Também atuamos na restauração de obras de arte e no trabalho com molduras e vidros, unindo o cuidado artesanal à escala de uma indústria consolidada.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="linhas">
+  <div class="xdq5_wrap">
+    <div class="xdq5_sec-head">
+      <p class="xdq5_eyebrow">Linhas</p>
+      <h2>O que produzimos</h2>
+      <p>Do quadro pronto para decorar ao projeto sob medida, com moldura escolhida por você.</p>
+    </div>
+    <div class="xdq5_cards">
+      <article class="xdq5_card">
+        <svg class="xdq5_ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="8" y="8" width="32" height="32" rx="1"/><path d="M8 32l9-10 7 7 6-6 8 9"/><circle cx="31" cy="18" r="3"/></svg>
+        <h3>Quadros decorativos</h3>
+        <p>Coleções prontas para sala, quarto e escritório, em diversos estilos, tamanhos e molduras.</p>
+      </article>
+      <article class="xdq5_card">
+        <svg class="xdq5_ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M24 6c-8 8-8 22 0 34 8-12 8-26 0-34z"/><path d="M10 34c6-2 22-2 28 0"/></svg>
+        <h3>Obras de arte</h3>
+        <p>Peças originais e reproduções em tela, com curadoria para quem busca algo com mais presença.</p>
+      </article>
+      <article class="xdq5_card">
+        <svg class="xdq5_ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="10" y="10" width="28" height="28"/><path d="M24 4v6M24 38v6M4 24h6M38 24h6"/><circle cx="24" cy="24" r="6"/></svg>
+        <h3>Quadros personalizados</h3>
+        <p>Transformamos a sua foto, arte ou projeto em quadro, com impressão e acabamento de fábrica.</p>
+      </article>
+      <article class="xdq5_card">
+        <svg class="xdq5_ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="6" width="36" height="36"/><rect x="14" y="14" width="20" height="20"/></svg>
+        <h3>Molduras e vidros</h3>
+        <p>Emolduramento sob medida, com opções de vidro, para valorizar qualquer imagem ou obra.</p>
+      </article>
+      <article class="xdq5_card">
+        <svg class="xdq5_ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M30 8l10 10-18 18-10 2 2-10z"/><path d="M26 12l10 10"/></svg>
+        <h3>Restauração de obras</h3>
+        <p>Recuperação de obras de arte e quadros antigos, com técnica e cuidado especializados.</p>
+      </article>
+      <article class="xdq5_card">
+        <svg class="xdq5_ico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 6h18l6 6v30H12z"/><path d="M30 6v6h6"/><path d="M18 22h12M18 28h12M18 34h8"/></svg>
+        <h3>Projetos e corporativo</h3>
+        <p>Atendimento a arquitetos, designers e empresas para ambientação de espaços em escala.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="como" class="xdq5_band">
+  <div class="xdq5_wrap">
+    <div class="xdq5_sec-head">
+      <p class="xdq5_eyebrow">Personalização</p>
+      <h2>Como criamos o seu quadro</h2>
+      <p>Um processo simples, do briefing à parede, com acompanhamento em cada etapa.</p>
+    </div>
+    <ol class="xdq5_flow">
+      <li><h3>Escolha</h3><p>Você seleciona um quadro do catálogo ou envia sua imagem, arte ou referência para personalizar.</p></li>
+      <li><h3>Produção</h3><p>Nossa fábrica cuida da impressão, da tela, da moldura e do acabamento, com controle de qualidade próprio.</p></li>
+      <li><h3>Entrega</h3><p>Embalamos com proteção reforçada para itens frágeis e enviamos para todo o Brasil, com prazo informado antes.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="depoimentos">
+  <div class="xdq5_wrap">
+    <div class="xdq5_sec-head">
+      <p class="xdq5_eyebrow">Depoimentos</p>
+      <h2>Quem já decorou com a gente</h2>
+    </div>
+    <div class="xdq5_quotes">
+      <blockquote><p>“Mandei uma foto da família e virou um quadro lindo. O acabamento é de galeria.”</p><footer>Cliente &middot; São Paulo, SP</footer></blockquote>
+      <blockquote><p>“Preço de outlet mesmo, e a moldura veio impecável. Recomendo.”</p><footer>Cliente &middot; Rio de Janeiro, RJ</footer></blockquote>
+      <blockquote><p>“Comprei para um projeto de interiores inteiro. Cumpriram prazo e padrão.”</p><footer>Arquiteta &middot; Campinas, SP</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="xdq5_wrap">
+    <div class="xdq5_sec-head">
+      <p class="xdq5_eyebrow">Contato</p>
+      <h2>Fale com a Outlet dos Quadros</h2>
+      <p>Atendimento de segunda a sexta, em horário comercial.</p>
+    </div>
+    <div class="xdq5_contact-grid">
+      <dl class="xdq5_info">
+        <dt>Endereço</dt>
+        <dd>Alameda Gabriel Monteiro da Silva, 632<br>Jardim América &middot; São Paulo, SP<br>CEP 01.442-000</dd>
+        <dt>Telefone</dt>
+        <dd><a href="tel:+551136701626">(11) 3670-1626</a></dd>
+        <dt>E-mail</dt>
+        <dd><a href="mailto:arteintegradafinanceiro@gmail.com">arteintegradafinanceiro@gmail.com</a></dd>
+        <dt>CNPJ</dt>
+        <dd>23.735.360/0001-37</dd>
+      </dl>
+
+      <form id="contato-form" novalidate>
+        <div class="xdq5_field"><label for="nome">Nome</label><input type="text" id="nome" name="nome" autocomplete="name" required></div>
+        <div class="xdq5_field"><label for="email">E-mail</label><input type="email" id="email" name="email" autocomplete="email" required></div>
+        <div class="xdq5_field"><label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" required></textarea></div>
+        <button type="submit">Enviar mensagem</button>
+        <p class="xdq5_form-note" id="form-note">Ao enviar, seu programa de e-mail abre com a mensagem pronta para arteintegradafinanceiro@gmail.com. Usamos seus dados apenas para responder este contato.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="xdq5_site">
+  <div class="xdq5_wrap">
+    <div class="xdq5_foot-grid">
+      <div>
+        <h4>Dados da empresa</h4>
+        <p>ARTE INTEGRADA COMERCIO DE ARTE LTDA<br>
+        Nome comercial: Outlet dos Quadros<br>
+        CNPJ 23.735.360/0001-37<br>
+        Alameda Gabriel Monteiro da Silva, 632 &middot; Jardim América<br>
+        São Paulo, SP &middot; CEP 01.442-000</p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="tel:+551136701626">(11) 3670-1626</a></li>
+          <li><a href="mailto:arteintegradafinanceiro@gmail.com">arteintegradafinanceiro@gmail.com</a></li>
+          <li>Segunda a sexta, horário comercial</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="index.html#sobre">Sobre</a></li>
+          <li><a href="index.html#linhas">Linhas</a></li>
+          <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+          <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="xdq5_legal">
+      <span>© 2026 ARTE INTEGRADA COMERCIO DE ARTE LTDA — Todos os direitos reservados</span>
+      <span>Comércio varejista de objetos de arte</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('contato-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var nome = document.getElementById('nome').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var msg = document.getElementById('mensagem').value.trim();
+    var nota = document.getElementById('form-note');
+    if (!nome || !email || !msg) { nota.textContent = 'Preencha nome, e-mail e mensagem para continuar.'; return; }
+    var assunto = encodeURIComponent('Contato pelo site - ' + nome);
+    var corpo = encodeURIComponent(msg + '\n\n---\nNome: ' + nome + '\nE-mail: ' + email);
+    window.location.href = 'mailto:arteintegradafinanceiro@gmail.com?subject=' + assunto + '&body=' + corpo;
+    nota.textContent = 'Abrimos seu programa de e-mail com a mensagem pronta. É só enviar.';
+  });
+</script>
+
+<footer style="text-align:center;padding:20px 8px;font-size:10px;color:#a0a0a0;margin-top:38px;border-top:1px solid #f2f2f2"><p>Outletquadros • Todos os direitos reservados © 2025. As opiniões expressas são baseadas em experiências individuais. <a href="https://outletquadros.online/" style="color:#a0a0a0;text-decoration:none">outletquadros.online</a></p></footer>
+</body>
+</html>
+
+<!-- d6621c1bdf89aef7ed72e595 -->

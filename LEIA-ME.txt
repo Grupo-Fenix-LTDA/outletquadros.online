@@ -1,0 +1,55 @@
+SITE INSTITUCIONAL - OUTLET DOS QUADROS
+Razão Social: ARTE INTEGRADA COMERCIO DE ARTE LTDA
+CNPJ 23.735.360/0001-37
+
+ARQUIVOS
+  index.html                    Página principal (hero, sobre, linhas, personalização, depoimentos, contato)
+  politica-de-privacidade.html  Política de Privacidade
+  termos-de-uso.html            Termos de Uso
+  LEIA-ME.txt                   Este arquivo
+
+COMO PUBLICAR
+  Envie os 3 arquivos .html para a raiz do domínio (public_html, htdocs ou equivalente).
+  Não precisa de banco de dados, PHP ou build. É HTML estático puro.
+  Funciona direto em Hostinger, cPanel, Netlify, Vercel ou Cloudflare Pages.
+
+DADOS USADOS (conferidos com o cartão CNPJ)
+  Razão Social:  ARTE INTEGRADA COMERCIO DE ARTE LTDA
+  Nome comercial: OUTLET DOS QUADROS (marca de exibição - ver observação 1)
+  CNPJ:          23.735.360/0001-37
+  Natureza:      206-2 - Sociedade Empresária Limitada
+  Porte:         EPP
+  Endereço:      Alameda Gabriel Monteiro da Silva, 632 - Jardim América - São Paulo/SP - CEP 01.442-000
+  Telefone:      (11) 3670-1626
+  E-mail:        arteintegradafinanceiro@gmail.com
+  Abertura:      24/11/2015
+  Atividade principal:   47.89-0-03 - Comércio varejista de objetos de arte
+  Atividades secundárias: comércio varejista de vidros; livros; jornais e revistas;
+                          outros produtos; e restauração de obras de arte (90.02-7-02).
+
+>>> PONTOS DE ATENÇÃO (importantes se for usar em verificação de conta de anúncios) <<<
+  1. NOME FANTASIA EM BRANCO: o cartão NÃO tem nome fantasia registrado. "Outlet dos Quadros"
+     é usado apenas como nome comercial/marca de exibição. A razão social completa
+     (ARTE INTEGRADA COMERCIO DE ARTE LTDA) aparece no rodapé e nas páginas legais, batendo
+     com o cartão. Ideal registrar "Outlet dos Quadros" como nome fantasia na Receita se for
+     usar a marca em verificações.
+
+  2. "35 ANOS" x DATA DE ABERTURA (2015): este CNPJ foi aberto em 24/11/2015 (~11 anos).
+     O texto do site atribui os 35+ anos ao GRUPO AP (a fabricante), e trata esta empresa
+     como o "braço digital" registrado em 2015 - assim não há contradição com o cartão.
+     Se o Grupo AP não puder ser comprovado, reconsidere a afirmação dos 35 anos.
+
+  3. "MAIOR FABRICANTE DA AMÉRICA LATINA": é um superlativo não verificável. Foi mantido
+     conforme o texto que você forneceu, mas pode ser sinalizado por plataformas de anúncio.
+     Alternativas defensáveis: "uma das maiores", "referência em", "tradicional fabricante".
+
+  4. E-MAIL: o cartão traz "arteintegradafinanceiro@gmail.com" (contém "financeiro"). Para
+     atendimento público, um e-mail de domínio próprio ou sem "financeiro" passa mais confiança.
+
+OBSERVAÇÕES
+  - A atividade secundária "Restauração de obras de arte" virou a linha "Restauração de obras".
+  - "Molduras e vidros" aproveita a atividade "Comércio varejista de vidros".
+  - Os quadros no topo e os ícones são ilustrações em SVG. Substitua por fotos reais das
+    peças/obras quando tiver.
+  - Fontes via Google Fonts (Playfair Display e Inter). Sem acesso externo, o site usa
+    fontes de sistema como fallback.
